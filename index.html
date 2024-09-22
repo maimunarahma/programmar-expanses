@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+<link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+<body class="bg-gradient-to-r from-[rgb(241 245 249)]">
+    <main class="flex item-center justify-center py-10">
+
+        <div class=" h-1/2 w-[30%] border-2 rounded-xl bg-white p-5 mt-3">
+            <h1 class="text-indigo-500 text-center text-3xl font-extrabold"> &#128187 Progammar Expanses Assistant</h1>
+    
+            <div class="flex justify-between px-7">
+                <button class="btn w-1/2 bg-gradient-to-r from-indigo-500 to-purple-400">Assistant</button>
+                <button class="btn w-1/2">History</button>
+            </div>
+            <form class="card-body ">
+                <div class="form-control">
+                  <label class="label">
+                    <span class="label-text font-bold">Income &#128176</span>
+                  </label>
+                  <input type="number" placeholder="Enter Income" id="earn" class="input input-bordered" required />
+                </div>
+                <div class="form-control ">
+  <div class="flex justify-between gap-2  item-center">
+    <div class="flex flex-col w-1/2">
+        <label class="label">
+            <span class="label-text">Software</span>
+          </label>
+          <input type="number" placeholder="Software Cost" id="cost1" class="input input-bordered" required />
+    </div>
+     <div class="flex flex-col w-1/2">
+        <label class="label">
+            <span class="label-text">Courses &#128218</span>
+          </label>
+          <input type="number" placeholder="Courses Cost" id='cost2' lass="input input-bordered" required />
+     </div>
+   
+    
+  </div>
+  <div class="w-1/2">
+    <label class="label">
+        <span class="label-text">Internet &#127757</span>
+      </label>
+      <input type="number" placeholder="Courses Cost" id="cost3" class="input input-bordered" required />
+</div>
+  <button class="btn bg-gradient-to-r from-indigo-500 to-purple-400 text-white mt-3" id="total">Calculate</button>
+ 
+  <label class="label">
+    <span class="label-text">Savings(%)  &#128181</span>
+  </label>
+  <input type="number" placeholder="Savings(%)" id="save" class="input input-bordered" required />
+
+  <button class="btn bg-gradient-to-r from-green-500 to-blue-300 mt-3" id="saving-calculation">
+    Calculate Savings
+  </button>
+                </div>
+                <div class="rounded-xl hidden" id="Summary">
+                <h1 class="text-center text-blue-400">Result Summary</h1>
+                </div>
+</form>
+        </div>
+    </main>
+    
+
+    <script src="./utility.js"></script>
+    <script src="./index.js"></script>
+    
+</body>
+</html>
